@@ -27,7 +27,7 @@ jobs:
         id: cache-deps
         uses: ./.github/actions/cache-and-load
         with:
-          caching: 'false'
+          caching: 'true'
       - name: Output informations
         run: echo "Cached used ${{ steps.cache-deps.outputs.used-cache }}"
       - name: Test code
