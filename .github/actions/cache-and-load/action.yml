@@ -26,3 +26,4 @@ runs:
       shell: bash
     - name: Set output
       run: echo "::set-output name=cache::'${{ inputs.caching }}'"
+      shell: bash
